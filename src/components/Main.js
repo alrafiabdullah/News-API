@@ -42,8 +42,7 @@ class Main extends Component {
   getNews(country) {
     axios
       .get(
-        // `http://newsapi.org/v2/everything?q=${country}&apiKey=adca92286f084c7ca8c3b6230a542d98`
-        `http://newsapi.org/v2/everything?domains=bdnews24.com&apiKey=adca92286f084c7ca8c3b6230a542d98`
+        `https://newsapi.org/v2/everything?domains=bdnews24.com&apiKey=adca92286f084c7ca8c3b6230a542d98`
       )
       .then((res) => {
         console.log(res.data);
